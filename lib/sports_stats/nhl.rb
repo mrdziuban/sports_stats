@@ -295,8 +295,6 @@ module NHL
       end
     end
 
-    private
-
     def self.build_stats_hash(rows)
       stats = {}
       keys = [:team_abbrev, :games_played, :starts, :minutes, :wins, :losses,
