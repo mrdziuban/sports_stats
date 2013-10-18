@@ -1,1 +1,5 @@
-require_relative 'nhl.rb'
+require 'nokogiri'
+require 'i18n'
+require 'open-uri'
+require 'active_support/inflector'
+require 'sports_stats/nhl'

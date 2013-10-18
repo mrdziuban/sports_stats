@@ -11,6 +11,5 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/mrdziuban/sports_stats'
   s.license = 'MIT'
   s.add_dependency 'nokogiri'
-  s.add_dependency 'open-uri'
   s.add_dependency 'i18n'
 end

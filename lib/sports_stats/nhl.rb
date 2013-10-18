@@ -1,5 +1,4 @@
 # require_relative 'tickets'
-require 'active_support/inflector'
 
 module NHL
   TEAMS = {
