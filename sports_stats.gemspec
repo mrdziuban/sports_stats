@@ -7,7 +7,8 @@ Gem::Specification.new do |s|
   s.authors = ['Matt Dziuban']
   s.email = 'mrdziuban@gmail.com'
   s.files = ['lib/sports_stats.rb',
-    'lib/sports_stats/nhl.rb']
+    'lib/sports_stats/nhl.rb',
+    'lib/sports_stats/mlb.rb']
   s.homepage = 'http://github.com/mrdziuban/sports_stats'
   s.license = 'MIT'
   s.add_dependency 'nokogiri'
