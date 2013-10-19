@@ -110,7 +110,7 @@ module NHL
     def self.search(options = {})
       @@year = options[:year] || 2013
       @@year = @@year.to_i
-      url = "http://sports.yahoo.com/nhl/standings/?season=#{options[:year]}"
+      url = "http://sports.yahoo.com/nhl/standings/?season=#{@@year}"
       page = Nokogiri::HTML(open(url))
       div = page.css("div.yom-tabview")
 
