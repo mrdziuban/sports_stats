@@ -1,42 +1,38 @@
-require 'nokogiri'
-require 'open-uri'
-require 'active_support/inflector'
-
-TEAMS = {
-  "red sox" => "Boston",
-  "rays" => "tampa bay",
-  "yankees" => "NY Yankees",
-  "orioles" => "Baltimore",
-  "blue jays" => "Toronto",
-  "tigers" => "Detroit",
-  "indians" => "Cleveland",
-  "royals" => "Kansas City",
-  "twins" => "Minnesota",
-  "white sox" => "Chicago Sox",
-  "athletics" => "Oakland",
-  "rangers" => "Texas",
-  "angels" => "LA Angels",
-  "mariners" => "Seattle",
-  "astros" => "Houston",
-  "braves" => "Atlanta",
-  "nationals" => "Washington",
-  "mets" => "NY Mets",
-  "phillies" => "Philadelphia",
-  "marlins" => "Miami",
-  "florida" => "Miami",
-  "cardinals" => "St. Louis",
-  "pirates" => "Pittsburgh",
-  "reds" => "Cincinnati",
-  "brewers" => "Milwaukee",
-  "cubs" => "Chicago Cubs",
-  "dodgers" => "LA Dodgers",
-  "diamondbacks" => "Arizona",
-  "giants" => "San Francisco",
-  "padres" => "San Diego",
-  "rockies" => "Colorado"
-}
-
 module MLB
+  TEAMS = {
+    "red sox" => "Boston",
+    "rays" => "tampa bay",
+    "yankees" => "NY Yankees",
+    "orioles" => "Baltimore",
+    "blue jays" => "Toronto",
+    "tigers" => "Detroit",
+    "indians" => "Cleveland",
+    "royals" => "Kansas City",
+    "twins" => "Minnesota",
+    "white sox" => "Chicago Sox",
+    "athletics" => "Oakland",
+    "rangers" => "Texas",
+    "angels" => "LA Angels",
+    "mariners" => "Seattle",
+    "astros" => "Houston",
+    "braves" => "Atlanta",
+    "nationals" => "Washington",
+    "mets" => "NY Mets",
+    "phillies" => "Philadelphia",
+    "marlins" => "Miami",
+    "florida" => "Miami",
+    "cardinals" => "St. Louis",
+    "pirates" => "Pittsburgh",
+    "reds" => "Cincinnati",
+    "brewers" => "Milwaukee",
+    "cubs" => "Chicago Cubs",
+    "dodgers" => "LA Dodgers",
+    "diamondbacks" => "Arizona",
+    "giants" => "San Francisco",
+    "padres" => "San Diego",
+    "rockies" => "Colorado"
+  }
+  
   class Team
     def self.search(options = {})
       @@year = options[:year] || 2013
